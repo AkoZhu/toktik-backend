@@ -4,7 +4,7 @@ const {ObjectNotFoundError, ObjectInvalidError} = require("../errors/databaseErr
 require('dotenv').config();
 
 // the mongodb server URL
-const dbURL = process.env.DB_URL;
+const dbURL = process.env.DB_URL ? process.env.DB_URL : 'mongodb://localhost:27017';
 
 let con;
 let db;
