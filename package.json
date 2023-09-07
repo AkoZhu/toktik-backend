@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint --ignore-pattern *.test.js --ignore-pattern routes/test/*.test.jsx ",
     "start": "node ./bin/www",
-    "test": "jest --coverage --runInBand routes/test/*.test.js --collectCoverageFrom=routes/*.js --watchAll --no-cache"
+    "test": "jest --coverage --runInBand routes/test/*.test.js --collectCoverageFrom=routes/*.js --no-cache --forceExit"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.224.0",
